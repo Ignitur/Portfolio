@@ -19,17 +19,17 @@ export default function Nav() {
 
           {/* Десктоп-меню */}
           <div className="hidden md:flex space-x-6">
-            <Link href="/home" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 mr-0">
-              Главная
+            <Link href="/home" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 pr-2">
+              Home
             </Link>
             <Link href="/pricing" className="text-gray-700 hover:text-blue-600 dark:text-gray-200">
-              Прайс
+              Price
             </Link>
             <Link href="/demos" className="text-gray-700 hover:text-blue-600 dark:text-gray-200">
-              Демо
+              Projects
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-blue-600 dark:text-gray-200">
-              Контакты
+              Contacts
             </Link>
           </div>
 

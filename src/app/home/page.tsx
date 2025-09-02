@@ -8,7 +8,7 @@ export default function Home() {
 			<section className="min-w-[55%] pt-20">
 				<h1 className="ml-8 text-6xl font-mono bg-cyan-300/20 w-auto">Hello there!</h1>
 				<h3 className="ml-10 mt-2 text-4xl">My name is Maurszky Michael</h3>
-				<h4 className="ml-10 text-2xl">I'm a web developer, interpreter and language teacher</h4>
+				<h4 className="ml-10 text-2xl">Im a web developer, interpreter and language teacher</h4>
 				<h4 className="ml-10 text-2xl">I love to write clean, elegant and efficient code </h4> 
 				<h4 className="ml-10 text-2xl">And help peoples with my knowledge with all the languages</h4>
 			</section>

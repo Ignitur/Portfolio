@@ -46,7 +46,7 @@ export default function FAQItem({
         type="button"
         onClick={() => setOpen((v) => !v)}
         className="flex w-full items-center  justify-between text-left font-medium
-                   text-gray-900 dark:text-gray-100 hover:opacity-90"
+                   text-gray-900 dark:text-gray-100 hover:opacity-90 active:bg-amber-200/20"
         aria-expanded={open}
         aria-controls={`panel-${id}`}
       >
@@ -74,7 +74,7 @@ export default function FAQItem({
         <div className="pt-2 text-gray-600 dark:text-gray-300 ">
           {Array.isArray(answer) ? (
 						answer.map((line, i) => (
-							<p key={i} className="leading-relaxed pl-2 text-2xl">
+							<p key={i} className="leading-relaxed pl-2 text-xl">
 							• {line}
 							</p>
 						))

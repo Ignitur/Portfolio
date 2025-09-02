@@ -26,7 +26,6 @@ export default function RootLayout({
   return (
     <html lang="ru" className="dark">
 			<head>
-				<script src="https://cdn.tailwindcss.com"></script>
 			</head>
       <body className="flex flex-col bg-gray-50 dark:bg-gray-900">
         <Nav />

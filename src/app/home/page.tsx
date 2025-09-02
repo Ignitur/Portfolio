@@ -12,24 +12,25 @@ export default function Home() {
 				<h4 className="ml-10 text-2xl">I love to write clean, elegant and efficient code </h4> 
 				<h4 className="ml-10 text-2xl">And help peoples with my knowledge with all the languages</h4>
 			</section>
-			<section className="flex px-30 justify-between items-start" >
+			<section className="flex md:px-30 justify-between items-start px-0 mt-4 gap-4 border-1 overflow-scroll
+				  " >
 				<FAQItem
 				question='Front-End Skills'
 				answer={['JavaScript', 'HTML5', 'CSS3', 'React', 'TypeScript', 'Next.js']}
 				defaultOpen={false} 
-				className='ml-10 pt-20 text-3xl w-fit'
+				className='ml-10 pt-10 text-3xl w-fit'
 				/>
 				<FAQItem
 				question='Back-end Skills'
 				answer={['Python', 'SQLite']}
 				defaultOpen={false} 
-				className='ml-10 pt-20 text-3xl w-fit'
-				/>
+				className='ml-10 pt-10 text-3xl w-fit'
+				/>				
 				<FAQItem
 				question='Languages'
 				answer={['English', 'Russian', 'Hungarian', 'Japanese']}
 				defaultOpen={false} 
-				className='ml-10 pt-20 text-3xl w-fit'
+				className='ml-10 pt-10 text-3xl w-fit'
 				/>
 			</section>
 		</div>

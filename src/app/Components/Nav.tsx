@@ -19,7 +19,7 @@ export default function Nav() {
 
           {/* Десктоп-меню */}
           <div className="hidden md:flex space-x-6">
-            <Link href="/home" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 pr-2">
+            <Link href="/home" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 ">
               Home
             </Link>
             <Link href="/pricing" className="text-gray-700 hover:text-blue-600 dark:text-gray-200">

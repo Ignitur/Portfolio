@@ -1,6 +1,6 @@
-import en from '../../public/locales/en/common.json';
-import ru from '../../public/locales/ru/common.json';
-import hu from '../../public/locales/hu/common.json';
+import en from './public/locales/en/common.json';
+import ru from './public/locales/ru/common.json';
+import hu from './public/locales/hu/common.json';
 
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";

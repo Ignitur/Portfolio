@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Nav from "./Components/Nav";
+import { i18n } from '../../next-i18next.config';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,13 +24,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+	
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : '';
+  const currentLocale = pathname?.split("/")[1] || i18n.defaultLocale;
+
+
   return (
-    <html lang="ru" className="dark">
+    <html lang={currentLocale} className="dark">
 			<head>
 			</head>
       <body className="flex flex-col bg-gray-50 dark:bg-gray-900">
         <Nav />
-        <main className="flex-1" >{children}</main>
+        <main className="flex-1 bg-[#3a0203]" >{children}</main>
       </body>
     </html>
   );

@@ -16,9 +16,9 @@ i18n
 			escapeValue: false,
     },
 		resources: {
-			en: { common: en },
-			ru: { common: ru },
-			hu: { common: hu },
+			en: { translation: en },
+			ru: { translation: ru },
+			hu: { translation: hu },
 		},
   });
 

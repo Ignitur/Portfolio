@@ -3,11 +3,13 @@
 import Link from "next/link";
 import LangSwitch from "./LangSwitch";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import "../i18n"
 
 
 export default function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
-
+	const { t } = useTranslation();
 
 
 	return (
@@ -23,7 +25,7 @@ export default function Nav() {
           {/* Десктоп-меню */}
           <div className="hidden md:flex space-x-6">
             <Link href="/home" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 ">
-              Home
+              {t("home")}
             </Link>
             <Link href="/pricing" className="text-gray-700 hover:text-blue-600 dark:text-gray-200">
               Price

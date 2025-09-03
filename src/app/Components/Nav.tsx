@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import LangSwitch from "./LangSwitch";
 import { useState } from "react";
+
 
 export default function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -9,11 +11,12 @@ export default function Nav() {
 
 
 	return (
-		<nav className="bg-white shadow-md dark:bg-yellow-600">
+		<nav className="bg-white shadow-md dark:bg-[#860001]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Лого / Имя */}
-          <div className="flex-shrink-0 text-xl font-bold text-gray-900 dark:text-white">
+          <div className="flex gap-4 flex-shrink-0 text-xl font-bold text-gray-900 dark:text-white">
+						<LangSwitch />	
             <Link href="/">Sigiz</Link>
           </div>
 
@@ -47,18 +50,18 @@ export default function Nav() {
 
       {/* Мобильное меню */}
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-800 px-4 pb-4 space-y-2 pt-2">
+        <div className="md:hidden bg-white dark:bg-[#422c0e] px-4 pb-4 space-y-2 pt-2">
           <Link href="/home" className="mobile-nav-btn">
-            Главная
+            Home
           </Link>
           <Link href="/pricing" className="mobile-nav-btn">
-            Прайс
+            Pricing
           </Link>
           <Link href="/demos" className="mobile-nav-btn">
-            Демо
+            Projects
           </Link>
           <Link href="/contact" className="mobile-nav-btn">
-            Контакты
+            Contacts
           </Link>
         </div>
       )}

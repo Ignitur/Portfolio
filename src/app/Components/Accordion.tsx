@@ -50,9 +50,9 @@ export default function FAQItem({
         aria-expanded={open}
         aria-controls={`panel-${id}`}
       >
-        <span className="pr-4">{question}</span>
+        <span className="pr-">{question}</span>
         <svg
-          className={`h-5 w-5 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+          className={`h-15 w-15 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"

@@ -1,6 +1,6 @@
-import en from './locales/en/common.json';
-import ru from './locales/ru/common.json';
-import hu from './locales/hu/common.json';
+import en from '../../public/locales/en/common.json';
+import ru from '../../public/locales/ru/common.json';
+import hu from '../../public/locales/hu/common.json';
 
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
@@ -16,9 +16,9 @@ i18n
 			escapeValue: false,
     },
 		resources: {
-			en: { translation: en },
-			ru: { translation: ru },
-			hu: { translation: hu },
+			en: { common: en },
+			ru: { common: ru },
+			hu: { common: hu },
 		},
   });
 

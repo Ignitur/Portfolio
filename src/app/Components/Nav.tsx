@@ -28,13 +28,13 @@ export default function Nav() {
               {t("home")}
             </Link>
             <Link href="/pricing" className="text-gray-700 hover:text-blue-600 dark:text-gray-200">
-              Price
+              {t("price")}
             </Link>
             <Link href="/demos" className="text-gray-700 hover:text-blue-600 dark:text-gray-200">
-              Projects
+              {t("projects")}
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-blue-600 dark:text-gray-200">
-              Contacts
+              {t("contacts")}
             </Link>
           </div>
 

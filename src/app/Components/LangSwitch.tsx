@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next"
 import "../../../i18n"
 
 const languages = [
-	{code: "en", lang: "English"},
-	{code: "ru", lang: "Russian"},
-	{code: "hu", lang: "Hungarian"},
+	{code: "en", lang: "EN"},
+	{code: "ru", lang: "RU"},
+	{code: "hu", lang: "HU"},
 ]
 
 

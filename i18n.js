@@ -1,17 +1,17 @@
-import en from './locales/en/common.json';
-import ru from './locales/ru/common.json';
-import hu from './locales/hu/common.json';
+import en from './src/locales/en/common.json';
+import ru from './src/locales/ru/common.json';
+import hu from './src/locales/hu/common.json';
 
 import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import { initReactI18next } from "react-i18next";
+import { initReactI18next, Translation } from "react-i18next";
 	
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
 		debug: true,
-    fallbackLng: "en",
+    fallbackLng: "ru",
     interpolation: {
 			escapeValue: false,
     },

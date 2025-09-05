@@ -52,7 +52,7 @@ export default function Home() {
 			<div className=" hidden md:block relative">
 				<div className="m-2 w-fit mx-[30%] col3 flex-1 text-center">
 					<span className="text-5xl txt4 font-bold">
-						I&apos;m happy that you looked here!
+						THIS IS NOT THE [PROJECTS] PAGE 
 					</span>
 				</div>
 				<section className="col3 w-100 h-auto ml-2 py-2">

@@ -19,7 +19,7 @@ export default function Nav() {
         <div className="flex justify-between h-16 items-center">
           {/* Лого / Имя */}
           <div className="flex gap-4 flex-shrink-0 text-xl font-bold txt5">
-						<ThemeSwitch />
+						{/* <ThemeSwitch /> */}
 						<LangSwitch />	
             <Link href="/" className="text-3xl underline underline-offset-4">Sigiz</Link>
           </div>
@@ -44,7 +44,7 @@ export default function Nav() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 dark:text-gray-200 focus:outline-none"
+              className="text-gray-700 dark:text-gray-200 text-3xl focus:outline-none"
             >
               ☰
             </button>

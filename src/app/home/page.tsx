@@ -10,10 +10,10 @@ export default function Home() {
 
 
   return (
-		<div className="mx-[5%] mt-2 pb-6 bg-[#7c5413] flex flex-col">
-			<section className="min-w-[55%] pt-20">
-				<h1 className="mx-8 text-6xl font-mono bg-[#e8c2ad] w-auto text-[#860001]">{t("greeting")}</h1>
-				<h3 className="mx-10 mt-2 text-4xl">My name is <span className="font-semibold text-[#860001] px-1 bg-[#e8c2ad] rounded-2xl">Maurszky Michael</span></h3>
+		<div className="mx-[5%] mt-4 pb-6 col3 flex flex-col">
+			<section className="min-w-[55%] pt-10">
+				<h1 className="mx-8 text-6xl font-mono w-auto txt4">{t("greeting")}</h1>
+				<h3 className="mx-10 mt-2 text-4xl">My name is <span className="font-semibold txt5 px-1 underline underline-offset-4 rounded-2xl">Maurszky Mihály</span></h3>
 				<h4 className="mx-10 text-2xl">{`I'm a web developer, interpreter and language teacher`}</h4>
 				<h4 className="mx-10 text-2xl">I love to write clean, elegant and efficient code </h4> 
 				<h4 className="mx-10 text-2xl">And help peoples with my knowledge with all the languages</h4>

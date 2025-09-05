@@ -10,13 +10,13 @@ export default function Home() {
 
 
   return (
-		<div className="mx-[5%] mt-4 pb-6 col3 flex flex-col">
+		<div className="mx-[5%] mt-4 pb-6 col3 flex flex-col">  
 			<section className="min-w-[55%] pt-10">
 				<h1 className="mx-8 text-6xl font-mono w-auto txt4">{t("greeting")}</h1>
-				<h3 className="mx-10 mt-2 text-4xl">My name is <span className="font-semibold txt5 px-1 underline underline-offset-4 rounded-2xl">Maurszky Mihály</span></h3>
-				<h4 className="mx-10 text-2xl">{`I'm a web developer, interpreter and language teacher`}</h4>
+				<h3 className="mx-10 mt-2 text-4xl">I&apos;m <span className="font-semibold txt5 px-1 underline underline-offset-4 rounded-2xl">Maurszky Mihály</span></h3>
+				<h4 className="mx-10 text-2xl">a web developer, interpreter, and language teacher.</h4>
 				<h4 className="mx-10 text-2xl">I love to write clean, elegant and efficient code </h4> 
-				<h4 className="mx-10 text-2xl">And help peoples with my knowledge with all the languages</h4>
+				<h4 className="mx-10 text-2xl">I share my knowledge of languages to help others.</h4>
 			</section>
 
 			<section className="flex md:px-30 justify-between items-start pb-8 px-0 mt-4 border-1 overflow-scroll

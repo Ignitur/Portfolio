@@ -44,7 +44,7 @@ export default function Nav() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 dark:text-gray-200 text-3xl focus:outline-none"
+              className="txt5 text-3xl focus:outline-none"
             >
               ☰
             </button>

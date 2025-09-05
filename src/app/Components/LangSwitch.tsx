@@ -37,8 +37,8 @@ export default function LangSwitch() {
 				<button 
 				className={`rounded-lg px-3 py-1 mr-2 border-2 border-[#566922] ${
 					lng.code === i18n.language
-						? "col4 text-white"
-						: "col1 text-gray-800 hover:border-amber-300"
+						? "col4 txt2"
+						: "col2 txt4 hover:border-amber-300"
 				}`}
 				key={lng.code} 
 				onClick={() => changeLanguage(lng.code)}

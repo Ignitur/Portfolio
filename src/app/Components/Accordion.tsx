@@ -17,23 +17,19 @@ export default function FAQItem({
 }: FAQItemProps) {
   const [open, setOpen] = useState(defaultOpen);
   const panelRef = useRef<HTMLDivElement>(null);
-  const id = useId(); // для aria-связки
+  const id = useId();
 
-  // Плавная анимация высоты
   useEffect(() => {
     const el = panelRef.current;
     if (!el) return;
 
     if (open) {
       el.style.maxHeight = el.scrollHeight + "px";
-      // после окончания — auto, чтобы внутри можно было менять контент
       const t = setTimeout(() => (el.style.maxHeight = "none"), 300);
       return () => clearTimeout(t);
     } else {
-      // чтобы анимация закрытия сработала из auto → ставим текущую высоту
       const current = el.scrollHeight;
       el.style.maxHeight = current + "px";
-      // рефлоу
       // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       el.offsetHeight;
       el.style.maxHeight = "0px";
@@ -71,7 +67,7 @@ export default function FAQItem({
         className="overflow-hidden transition-[max-height] duration-300 ease-in-out "
         style={{ maxHeight: defaultOpen ? "none" : "0px" }}
       >
-        <div className="pt-2 text-gray-600 dark:text-gray-300 ">
+        <div className="pt-2 txt4 dark:text-gray-300 ">
           {Array.isArray(answer) ? (
 						answer.map((line, i) => (
 							<p key={i} className="leading-relaxed pl-2 text-xl">

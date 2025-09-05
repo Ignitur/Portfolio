@@ -17,7 +17,7 @@ export default function Home() {
 			<div className="relative">
 				<div className="m-2 w-fit mx-[5%] rounded-2xl col3 flex-1 text-center">
 					<span className="text-3xl txt4 font-bold">
-						I'm happy that you looked here!
+						I&apos;m happy that you looked here!
 					</span>
 				</div>
 				<section className="col3 w-[90%] text-center h-auto mx-[5%] mt-8 py-4">
@@ -52,7 +52,7 @@ export default function Home() {
 			<div className=" hidden md:block relative">
 				<div className="m-2 w-fit mx-[30%] col3 flex-1 text-center">
 					<span className="text-5xl txt4 font-bold">
-						I'm happy that you looked here!
+						I&apos;m happy that you looked here!
 					</span>
 				</div>
 				<section className="col3 w-100 h-auto ml-2 py-2">

@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import { useTranslation } from "react-i18next"
 import "../../../i18n"
 
@@ -11,7 +12,19 @@ const languages = [
 
 
 export default function LangSwitch() {
+	const [value, setValue] = useState('');
   const { i18n } = useTranslation();
+
+	useEffect(() => {
+		const storedValue = localStorage.getItem('i18nextLng');
+		if (storedValue) {
+			setValue(storedValue);
+		}
+	},[])
+
+	useEffect(() =>{
+		localStorage.setItem("i18nextLng", value);
+	}, [value])
 	
 	const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
@@ -22,7 +35,11 @@ export default function LangSwitch() {
 			{languages.map((lng) => {
 				return (
 				<button 
-				className={lng.code === i18n.language ? "selected" : ""}
+				className={`rounded-lg px-3 py-1 mr-2 border-2 border-[#566922] ${
+					lng.code === i18n.language
+						? "col4 text-white"
+						: "col1 text-gray-800 hover:border-amber-300"
+				}`}
 				key={lng.code} 
 				onClick={() => changeLanguage(lng.code)}
 				>

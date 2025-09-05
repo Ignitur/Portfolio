@@ -31,5 +31,53 @@ body {
 }
 
 .mobile-nav-btn {
-	@apply block text-gray-700 hover:text-blue-600 dark:text-gray-200 border-b-2 border-amber-600
+	@apply block border-b-2 border-[#b2d17f]
+}
+
+.col1 {
+	@apply bg-[#91a8a3];
+}
+
+.txt1 {
+	@apply text-[#91a8a3];
+}
+
+.col2 {
+	@apply bg-[#0c120c];
+}
+
+.txt2 {
+	@apply text-[#0c120c];
+}
+
+.col3 {
+	@apply bg-[#566922];
+}
+
+.txt3 {
+	@apply text-[#566922];
+}
+
+.col4 {
+	@apply bg-[#a6bc36];
+}
+
+.txt4 {
+	@apply text-[#a6bc36];
+}
+
+.col5 {
+	@apply bg-[#c5d046];
+}
+
+.txt5 {
+	@apply text-[#c5d046];
+}
+
+.col6 {
+	@apply bg-[#b2d17f];
+}
+
+.txt6 {
+	@apply text-[#b2d17f];
 }

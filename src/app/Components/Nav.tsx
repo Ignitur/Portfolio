@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import LangSwitch from "./LangSwitch";
+import ThemeSwitch from "./ThemeSwitch";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "../../../i18n"
@@ -13,27 +14,28 @@ export default function Nav() {
 
 
 	return (
-		<nav className="bg-white shadow-md dark:bg-[#860001]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<nav className="bg-[#566922] shadow-md ">
+      <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Лого / Имя */}
-          <div className="flex gap-4 flex-shrink-0 text-xl font-bold text-gray-900 dark:text-white">
+          <div className="flex gap-4 flex-shrink-0 text-xl font-bold txt5">
+						<ThemeSwitch />
 						<LangSwitch />	
-            <Link href="/">Sigiz</Link>
+            <Link href="/" className="text-3xl underline underline-offset-4">Sigiz</Link>
           </div>
 
           {/* Десктоп-меню */}
-          <div className="hidden md:flex space-x-6">
-            <Link href="/home" className="text-gray-700 hover:text-blue-600 dark:text-gray-200 ">
+          <div className="hidden md:flex space-x-2 text-2xl txt4" >
+            <Link href="/home" className="col2 rounded-2xl px-2 border-2 border-[#0c120c] hover:border-[#a6bc36]">
               {t("home")}
             </Link>
-            <Link href="/pricing" className="text-gray-700 hover:text-blue-600 dark:text-gray-200">
+            <Link href="/pricing" className="col2 rounded-2xl px-2 border-2 border-[#0c120c] hover:border-[#a6bc36]">
               {t("price")}
             </Link>
-            <Link href="/demos" className="text-gray-700 hover:text-blue-600 dark:text-gray-200">
+            <Link href="/projects" className="col2 rounded-2xl px-2 border-2 border-[#0c120c] hover:border-[#a6bc36]">
               {t("projects")}
             </Link>
-            <Link href="/contact" className="text-gray-700 hover:text-blue-600 dark:text-gray-200">
+            <Link href="/contacts" className="col2 rounded-2xl px-2 border-2 border-[#0c120c] hover:border-[#a6bc36]">
               {t("contacts")}
             </Link>
           </div>
@@ -52,18 +54,18 @@ export default function Nav() {
 
       {/* Мобильное меню */}
       {isOpen && (
-        <div className="md:hidden bg-white dark:bg-[#422c0e] px-4 pb-4 space-y-2 pt-2">
-          <Link href="/home" className="mobile-nav-btn">
-            Home
+        <div className="md:hidden col2 px-4 pb-4 space-y-2 pt-2">
+          <Link href="/home" className="mobile-nav-btn txt4">
+            {t("home")}
           </Link>
-          <Link href="/pricing" className="mobile-nav-btn">
-            Pricing
+          <Link href="/pricing" className="mobile-nav-btn txt4">
+            {t("price")}
           </Link>
-          <Link href="/demos" className="mobile-nav-btn">
-            Projects
+          <Link href="/projects" className="mobile-nav-btn txt4">
+            {t("projects")}
           </Link>
-          <Link href="/contact" className="mobile-nav-btn">
-            Contacts
+          <Link href="/contacts" className="mobile-nav-btn txt4">
+            {t("contacts")}
           </Link>
         </div>
       )}

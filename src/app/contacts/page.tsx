@@ -1,5 +1,7 @@
-import { FaGithub, FaLinkedin, FaTelegram, FaInstagram, FaFacebook } from "react-icons/fa";
+"use client"
 
+import { FaGithub, FaLinkedin, FaTelegram, FaInstagram, FaFacebook } from "react-icons/fa";
+import ContactForm from "../Components/ContactForm";
 
 export default function Home() {
 	const socials = [
@@ -42,8 +44,9 @@ export default function Home() {
 					
 				</section>
 				<section className="col3 w-[90%] h-80 fixed mt-4 py-2 mx-[5%]">
-						<div>
-							Or you can just fill this form:
+						<div className="txt5 text-center pt-2 font-bold text-2xl">
+							Or you can contact me via this form:
+							<ContactForm />
 						</div>
 				</section>
 			</div>
@@ -51,12 +54,12 @@ export default function Home() {
 			{/* DESKTOP */}
 			<div className=" hidden md:block relative">
 				<div className="m-2 w-fit mx-[30%] col3 flex-1 text-center">
-					<span className="text-5xl txt4 font-bold">
+					<span className="text-5xl txt4 font-extrabold">
 						I&apos;m happy that you looked here!
 					</span>
 				</div>
 				<section className="col3 w-100 h-auto ml-2 py-2">
-					<span className="txt4 text-3xl pl-2">
+					<span className=" flex txt4 text-3xl pl-2 text-left">
 						You can contact me trough socials:
 					</span>
 					<div className="flex flex-col gap-4 mt-6 ml-4 ">
@@ -68,17 +71,18 @@ export default function Home() {
 								rel="noopener noreferrer"
 								className="flex items-center gap-3 text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors"
 							>
-								<span className="text-4xl  txt4">{s.icon}</span>
+								<span className="text-3xl  txt4">{s.icon}</span>
 								
-								<span className="text-2xl txt4">{s.name}</span>
+								<span className="text-1xl txt4">{s.name}</span>
 							</a>
 						))}
 					</div>
 					
 				</section>
-				<section className="col3 w-100 h-80 fixed right-10">
-						<div>
-							Or you can just fill this form:
+				<section className="col3 w-110 h-80 fixed right-10 m-2">
+						<div className="txt5 text-center pt-2 font-bold text-2xl">
+							Or you can contact me via this form:
+							<ContactForm />
 						</div>
 				</section>
 			</div>

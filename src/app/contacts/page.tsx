@@ -14,7 +14,7 @@ export default function Home() {
   return (
 		<div>
 			{/* PHONE */}
-			<div className="relative">
+			<div className=" md:hidden relative">
 				<div className="m-2 w-fit mx-[5%] rounded-2xl col3 flex-1 text-center">
 					<span className="text-3xl txt4 font-bold">
 						I&apos;m happy that you looked here!

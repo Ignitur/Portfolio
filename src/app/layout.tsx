@@ -1,6 +1,7 @@
 "use client"
 import "./globals.css";
 import dynamic from "next/dynamic";
+import Footer from "./Components/Footer";
 
 const Nav = dynamic(() => import("./Components/Nav"), { ssr: false });
 const DynamicChildren = dynamic(() => import("./DynamicChildren"), { ssr: false });
@@ -16,9 +17,10 @@ export default function RootLayout({
     <html lang={'en'} className="dark" id="theme">
 			<head>
 			</head>
-      <body className="flex flex-col">
+      <body className="flex flex-col relative overflow-scroll scrollbar-hide">
 				<Nav />
         <DynamicChildren>{children}</DynamicChildren>
+				<Footer />
       </body>
     </html>
   );

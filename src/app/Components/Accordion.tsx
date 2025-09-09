@@ -46,7 +46,7 @@ export default function FAQItem({
         aria-expanded={open}
         aria-controls={`panel-${id}`}
       >
-        <span className="pr-">{question}</span>
+        <span className="pr- ">{question}</span>
         <svg
           className={`h-15 w-15 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
           viewBox="0 0 20 20"
@@ -67,7 +67,7 @@ export default function FAQItem({
         className="overflow-hidden transition-[max-height] duration-300 ease-in-out "
         style={{ maxHeight: defaultOpen ? "none" : "0px" }}
       >
-        <div className="pt-2 txt5 dark:text-gray-300 ">
+        <div className="pt-2 txt2 font-bold ">
           {Array.isArray(answer) ? (
 						answer.map((line, i) => (
 							<p key={i} className="leading-relaxed pl-2 text-xl">

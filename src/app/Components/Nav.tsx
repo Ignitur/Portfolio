@@ -14,14 +14,14 @@ export default function Nav() {
 
 
 	return (
-		<nav className="bg-[#566922] shadow-md ">
+		<nav className="col3 shadow-md sticky top-0">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Лого / Имя */}
-          <div className="flex gap-4 flex-shrink-0 text-xl font-bold txt5">
+          <div className="flex gap-4 flex-shrink-0 text-xl font-bold">
 						{/* <ThemeSwitch /> */}
 						<LangSwitch />	
-            <Link href="/" className="text-3xl underline underline-offset-4">Sigiz</Link>
+            <Link href="/home" className="text-3xl underline underline-offset-4 txt2">Sigiz</Link>
           </div>
 
           {/* Десктоп-меню */}

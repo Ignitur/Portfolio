@@ -31,7 +31,8 @@ export default function SkillCards() {
 		<div className="flex justify-between">
 			<div className="grid grid-cols-2 md:grid-cols-3 gap-6">
 				{skillsFront.map((skill) => (
-					<div className="flex flex-col items-center p-4 bg-white txt2 rounded-xl shadow hover:shadow-md transition">
+					<div key={skill.name} 
+					 className="flex flex-col items-center p-4 bg-white txt2 rounded-xl shadow hover:shadow-md transition">
 						<span className="text-4xl">{skill.icon}</span>
 						<p className="mt-2 text-gray-700 font-medium">{skill.name}</p>
 					</div>
@@ -39,7 +40,8 @@ export default function SkillCards() {
 			</div>
 			<div className="grid grid-cols-2 md:grid-cols-3 gap-6">
 				{skillsBack.map((skill) => (
-					<div className="flex flex-col items-center p-4 bg-white txt2 rounded-xl shadow hover:shadow-md transition">
+					<div key={skill.name} 
+					className="flex flex-col items-center p-4 bg-white txt2 rounded-xl shadow hover:shadow-md transition">
 						<span className="text-4xl">{skill.icon}</span>
 						<p className="mt-2 text-gray-700 font-medium">{skill.name}</p>
 					</div>
@@ -47,7 +49,8 @@ export default function SkillCards() {
 			</div>
 			<div className="grid grid-cols-2 md:grid-cols-3 gap-6">
 				{skillsLang.map((skill) => (
-					<div className="flex flex-col items-center p-4 bg-white txt2 rounded-xl shadow hover:shadow-md transition">
+					<div key={skill.name}
+					className="flex flex-col items-center p-4 bg-white txt2 rounded-xl shadow hover:shadow-md transition">
 						<span className="text-4xl">{skill.icon}</span>
 						<p className="mt-2 text-gray-700 font-medium">{skill.name}</p>
 					</div>

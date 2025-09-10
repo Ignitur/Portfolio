@@ -1,5 +1,5 @@
 import { FaReact, FaHtml5, FaJs, FaCss3, FaPython } from "react-icons/fa";
-
+import { SiTypescript, SiNextdotjs, SiTailwindcss, SiSqlalchemy } from "react-icons/si";
 
 
 
@@ -7,14 +7,14 @@ const skillsFront = [
 		{icon: <FaHtml5/>, name: "HTML5"},
 		{icon: <FaCss3/>, name: "CSS3"},
 		{icon: <FaJs/>, name: "JavaScript"},
-		{icon: "", name: "TypeScript"},
+		{icon: <SiTypescript/>, name: "TypeScript"},
 		{icon: <FaReact/>, name: "React"},
-		{icon: "", name: "Next.js"},
-		{icon: "", name: "TailwindCSS"},
+		{icon: <SiNextdotjs/>, name: "Next.js"},
+		{icon: <SiTailwindcss/>, name: "TailwindCSS"},
 	]
 	const skillsBack = [
 		{icon: <FaPython/>, name: "Python"},
-		{icon: "", name: "SQLite"},
+		{icon: <SiSqlalchemy/>, name: "SQLite"},
 
 	]
 	const skillsLang = [

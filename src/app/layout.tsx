@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang={'en'} className="dark" id="theme">
 			<head>
 			</head>
-      <body className="flex flex-col relative overflow-scroll scrollbar-hide">
+      <body className="flex flex-col flex-1 relative overflow-scroll scrollbar-hide">
 				<Nav />
         <DynamicChildren>{children}</DynamicChildren>
 				<Footer />

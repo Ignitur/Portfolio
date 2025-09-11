@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
 
 export default function Footer() {
 	return (
-	<footer className="pt-3 h-10 bg-gray-900 text-gray-400">
+	<footer className="py-3 mb- h-10 bg-gray-900 text-gray-400">
 		<div className="max-w-6xl mx-auto flex justify-between items-center">
 			<p className="text-sm">© 2025 Sigiz. Built with Next.js & TailwindCSS</p>
 			<div className="flex gap-4 text-xl">

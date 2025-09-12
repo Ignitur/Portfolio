@@ -16,14 +16,14 @@ export default function Home() {
   return (
 		<div>
 			{/* PHONE */}
-			<div className=" md:hidden relative">
+			<div className=" md:hidden ">
 				<div className="m-2 w-fit mx-[5%] rounded-2xl col3 flex-1 text-center">
-					<span className="text-3xl txt4 font-bold">
+					<span className="text-3xl txt2 font-bold">
 						I&apos;m happy that you looked here!
 					</span>
 				</div>
-				<section className="col3 w-[90%] text-center h-auto mx-[5%] mt-8 py-4">
-					<span className="txt4 text-2xl  font-bold pl-2">
+				<section className="col3 w-[90%] text-center rounded-2xl h-auto mx-[5%] mt-8 py-4">
+					<span className="txt text-2xl  font-bold pl-2">
 						You can contact me trough socials:
 					</span>
 					<div className="flex flex-col gap-4 mt-6 ml-4 ">
@@ -33,17 +33,17 @@ export default function Home() {
 								href={s.url}
 								target="_blank"
 								rel="noopener noreferrer"
-								className="flex items-center gap-3 text-lg font-medium text-gray-700 hover:text-blue-600 transition-colors"
+								className="flex items-center gap-3 text-lg font-medium "
 							>
-								<span className="text-4xl  txt4">{s.icon}</span>
+								<span className="text-4xl  txt2">{s.icon}</span>
 								
-								<span className="text-2xl txt4">{s.name}</span>
+								<span className="text-2xl txt2">{s.name}</span>
 							</a>
 						))}
 					</div>
 					
 				</section>
-				<section className="col3 w-[90%] h-80 fixed mt-4 py-2 mx-[5%]">
+				<section className="col3 w-[90%] h-80 mt-4 py-2 mx-[5%] rounded-2xl mb-4">
 						<div className="txt5 text-center pt-2 font-bold text-2xl">
 							Or you can contact me via this form:
 							<ContactForm />

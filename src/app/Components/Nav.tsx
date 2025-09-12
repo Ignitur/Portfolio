@@ -17,14 +17,13 @@ export default function Nav() {
 		<nav className="col3 shadow-md sticky top-0">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          {/* Лого / Имя */}
           <div className="flex gap-4 flex-shrink-0 text-xl font-bold">
 						{/* <ThemeSwitch /> */}
 						<LangSwitch />	
-            <Link href="/home" className="text-3xl underline underline-offset-4 txt2">Sigiz</Link>
+            <Link href="/home" className="text-3xl font-extrabold underline underline-offset-4 txt2">Sigiz</Link>
           </div>
 
-          {/* Десктоп-меню */}
+          {/* DESKTOP */}
           <div className="hidden md:flex space-x-2 text-2xl txt4" >
             <Link href="/home" className="col2 rounded-2xl px-2 border-2 border-[#0c120c] hover:border-[#a6bc36]">
               {t("home")}
@@ -40,7 +39,7 @@ export default function Nav() {
             </Link>
           </div>
 
-          {/* Мобильная кнопка */}
+          {/* MOBILE MENU BTN */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -52,7 +51,7 @@ export default function Nav() {
         </div>
       </div>
 
-      {/* Мобильное меню */}
+      {/* MOBILE MENU */}
       {isOpen && (
         <div className="md:hidden col2 px-4 pb-4 space-y-2 pt-2">
           <Link href="/home" className="mobile-nav-btn txt4">

@@ -41,7 +41,7 @@ body {
 }
 
 .mobile-nav-btn {
-	@apply block border-b-2 border-[#b2d17f]
+	@apply block border-b-2 border-[#42007b] text-xl font-semibold
 }
 
 .col1 {

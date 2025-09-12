@@ -12,7 +12,7 @@ export default function ContactForm() {
   return (
     <form 
 		onSubmit={handleSubmit}
-		className='flex flex-col mx-4 mt-2 '
+		className='flex flex-col mx-4 mt-2'
 		>
       <label htmlFor="email">
       </label>
@@ -42,7 +42,7 @@ export default function ContactForm() {
       <button
 				type="submit"
 				disabled={state.submitting}
-				className='col2 w-30 m-auto mt-2 rounded-2xl border-2 border-black hover:border-[#a6bc36]'
+				className='col3 txt2 w-30 m-auto mt-2 rounded-2xl border-3 border-[#56d722] active:border-5]'
 				>
         Submit
       </button>

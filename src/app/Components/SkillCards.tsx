@@ -56,12 +56,12 @@ const skillsAll = [
 
 export default function SkillCards() {
 	return (
-		<div className="flex justify-between mt-4">
-			<div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+		<div className="flex justify-between mt-4 mb-6">
+			<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 				{skillsAll.map((skillCat) => {
 					return (
 					<div key={skillCat.category}
-					className="grid grid-cols-2 md:grid-cols-3 gap-6 col3 rounded-2xl">
+					className="grid grid-cols-3 md:grid-cols-3 gap-6 col3 rounded-2xl">
 						<div className="border-b-2 border-[#83e917] col-span-3 grid place-items-center text-2xl h-16">
 							<span className="">
 								{skillCat.category}
